@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+.GreatVibes {
+  font-family: "Great Vibes", Arial, Helvetica, sans-serif;
+}
+
+.Inter {
+  font-family: "Inter", 'Times New Roman', Times, serif;
+}
+
+.title-text {
+  color: #4B081B;
+}
+
+.desc-text {
+  color: #763735;
+}
+
+.accent-text {
+  color: #EC6E6B;
+}
+
+.accent-bg {
+  background-color: #EE9EBC;
+}
+
+.accent-bg2 {
+  background-color: #E36292;
+}
+
+.accent-bg3 {
+  background-color: #F0DEE5;
+}
+
+.flor-amigavel {
+  animation: windBlow 4s ease-in-out infinite;
+}
+
+.button {
+  translate: 0px 0px;
+}
+
+.bounce {
+  animation: bounce 2s linear 1 forwards;
+}
+
+@keyframes windBlow {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 45deg;
+  }
+  50% {
+    rotate: 0deg;
+  }
+  75% {
+    rotate: -45deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0px;
+  }
+  40% {
+    translate: 0px 10px;
+  }
+  50% {
+    translate: 0px 0px;
+  }
+  70% {
+    translate: 0px 7px;
+  }
+  80% {
+    translate: 0px 0px;
+  }
+  90% {
+    translate: 0px 5px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+html:has(*.popup.delay-700.translate-y-0), 
+html:has(*.Sidebar.translate-y-full) {
+  overflow-y: hidden;
+}
